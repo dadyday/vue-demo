@@ -41,4 +41,17 @@ module.exports = {
       ]);
     }
   },
+  pluginOptions: {
+    // https://www.npmjs.com/package/vue-cli-plugin-import-components
+    components: {
+      mapComponent(component) {
+        /* wont work:
+        component.kebabName = 'prefix-'+component.kebabName;
+        component.pascalName = 'Prefix'+component.pascalName;
+        */
+        // console.log(component);
+        return component;
+      },
+    },
+  },
 };
