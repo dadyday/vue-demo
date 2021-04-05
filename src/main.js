@@ -14,6 +14,11 @@ library.add(fab);
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 Vue.component("FontAwesomeIcon", FontAwesomeIcon);
 
+import axios from "axios";
+import VueAxios from "vue-axios";
+Vue.use(VueAxios, axios);
+// https://www.npmjs.com/package/vue-axios
+
 new Vue({
   render: (h) => h(App),
 }).$mount("#app");

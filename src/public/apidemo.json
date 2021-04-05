@@ -1,0 +1,10 @@
+[
+  { "value": 1, "title": "the one and only" },
+  { "value": 2, "title": "the only even prime number" },
+  { "value": 3, "title": "the lowest odd prime number" },
+  { "value": 4, "title": "the perfect square" },
+  { "value": 5, "title": "a 'handy' number" },
+  { "value": 27, "title": "the perfect cube" },
+  { "value": 42, "title": "the answer to all" },
+  { "value": 73, "title": "the 'most beautiful' number of all" }
+]

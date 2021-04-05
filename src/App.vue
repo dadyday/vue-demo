@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <RenderDemo />
     <FontAwesomeIcon icon="user-secret" />
+    <ApiDemo url="/apidemo.json" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
