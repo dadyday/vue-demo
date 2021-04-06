@@ -2,8 +2,8 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <RenderDemo />
+    <ApiDemo url="/api/" />
     <FontAwesomeIcon icon="user-secret" />
-    <ApiDemo url="/apidemo.json" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>

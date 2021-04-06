@@ -1,6 +1,11 @@
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
+const {spawn} = require('child_process');
+const cmd = "php -S localhost:8000 -t public/api";
+const aCmd = cmd.split(' ');
+spawn(aCmd.shift(), aCmd);
+
 module.exports = {
   pages: {
     index: {
@@ -10,6 +15,16 @@ module.exports = {
   },
   outputDir: 'public',
   devServer: {
+    proxy: {
+      "/api": {
+        target: "http://[::]:8000",
+        ws: true,
+        secure: false,
+        changeOrigin: true,
+        logLevel: "debug",
+        pathRewrite: { "^/api/": "/" },
+      }
+    },
     writeToDisk: file => {
       return !/\.hot-update\.js/.test(file);
     },
