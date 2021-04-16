@@ -19,6 +19,9 @@ import VueAxios from "vue-axios";
 Vue.use(VueAxios, axios);
 // https://www.npmjs.com/package/vue-axios
 
+import Wrap from "./wrap.js";
+Vue.component("Wrap", Wrap);
+
 new Vue({
   render: (h) => h(App),
 }).$mount("#app");
