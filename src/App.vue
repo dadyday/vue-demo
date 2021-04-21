@@ -1,11 +1,14 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    <StateDemo />
+  <!--
     <RenderDemo />
     <ApiDemo url="/api/" />
     <FontAwesomeIcon icon="user-secret" />
     <WrapDemo />
     <HelloWorld msg="Welcome to Your Vue.js App" />
+  -->
   </div>
 </template>
 
